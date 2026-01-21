@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package projectoavance1;
-//Parte de tati
 
 /**
  *
- * @author carolinasalazarelizondo
+ * @author Esteban Gamboa
  */
 public class Servicio {
     private String nombre;
@@ -55,6 +50,7 @@ public class Servicio {
     }
 
     // Para mostrar en listas (usado por otros modulos)
+    @Override
     public String toString() {
         return nombre + " - " + descripcion;
     }

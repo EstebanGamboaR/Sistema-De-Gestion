@@ -1,13 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Sistema Good Wood - Facturación
  */
 package projectoavance1;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author carolinasalazarelizondo
+ * @author Esteban Gamboa
  */
 public class Factura {
     public String fechaHora;
@@ -19,6 +18,7 @@ public class Factura {
         this.fechaHora = fechaHora;
         this.servicioPrestado = servicioPrestado;
         this.cliente = cliente;
+        this.estado = "Activa"; // Agregué "Activa" por defecto para consistencia
     }
 
     // Método para registrar una nueva factura
@@ -32,6 +32,7 @@ public class Factura {
 
     // Método para anular una factura
     public void anularFactura() {
+        this.estado = "Anulada";
         JOptionPane.showMessageDialog(null,
                 "La factura del cliente " + cliente + " ha sido ANULADA.");
     }
@@ -44,7 +45,8 @@ public class Factura {
                 lista += "\nFactura #" + (i + 1)
                         + "\nFecha: " + facturas[i].fechaHora
                         + "\nCliente: " + facturas[i].cliente
-                        + "\nServicio: " + facturas[i].servicioPrestado + "\n";
+                        + "\nServicio: " + facturas[i].servicioPrestado 
+                        + "\nEstado: " + facturas[i].estado + "\n";
             }
         }
         JOptionPane.showMessageDialog(null, lista);

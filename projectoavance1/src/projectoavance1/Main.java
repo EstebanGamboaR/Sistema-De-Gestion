@@ -4,15 +4,14 @@ import javax.swing.JOptionPane;
 
 /**
  * Clase Main - Sistema Good Wood
- * Proyecto Avance 1 - Grupo Completo
- * @author carolinasalazarelizondo
+ * Proyecto Personal - Portafolio
+ * @author Esteban Gamboa
  */
 public class Main {
     public static void main(String[] args) {
         // Instanciar gestores de los 3 módulos
         GestorUsuarios gestorUsuarios = new GestorUsuarios();
         GestorCatalogos gestorCatalogos = new GestorCatalogos();
-
 
         gestorUsuarios.setGestorCatalogos(gestorCatalogos);
         gestorCatalogos.setGestorUsuarios(gestorUsuarios);

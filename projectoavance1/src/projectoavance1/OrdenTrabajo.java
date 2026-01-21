@@ -1,9 +1,8 @@
-
 package projectoavance1;
 
 /**
  *
- * @author carolinasalazarelizondo
+ * @author Esteban Gamboa
  */
 public class OrdenTrabajo {
     private String fecha;

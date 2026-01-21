@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 /**
  * Gestor de Catálogos
+ * @author Esteban Gamboa
  */
 public class GestorCatalogos {
 

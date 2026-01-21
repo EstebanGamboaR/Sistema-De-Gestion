@@ -1,8 +1,8 @@
 package projectoavance1;
 
 /**
- * Clase Usuario - Módulo 1
- * @author carolinasalazarelizondo
+ * Clase Usuario
+ * @author Esteban Gamboa
  */
 public class Usuario {
     private String nombreCompleto;
